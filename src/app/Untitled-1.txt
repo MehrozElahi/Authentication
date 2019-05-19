@@ -1,0 +1,19 @@
+<script>
+    jQuery(document).ready(function(){
+
+        console.log('texting');
+        setTimeout(function(){
+            myfn();
+        }, 5000);
+
+        function myfn(){
+            jQuery('#lable_MWALLET input').removeAttr('checked');
+            jQuery('#lable_MIGS input').attr("checked", "checked");
+        }
+
+
+        jQuery('input[name=checkout_next_step],.timeline.payment').click(function(){
+            myfn();
+        })
+    })
+</script>
